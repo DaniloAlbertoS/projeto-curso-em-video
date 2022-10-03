@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela espancivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+
+        }
+        td{
+            border: 2px solid black;
+            text-align: center;
+            text-transform: uppercase;
+            
+
+        }
+        table{
+            width: 400px;
+            height: 200px;
+            
+        }
+       td:hover{
+        background-color: rgb(172, 172, 172);
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" class="linha a">a</td>
+            <td rowspan="4" class="linhab">b</td>  
+        </tr>
+        <tr>
+            
+            <td rowspan="4" class="linha c">c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+           
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+           
+            <td>j</td>
+            <td>l</td>
+            <td>m</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="linha n">n</td>
+        </tr>
+    </table>
+</body>
+</html>

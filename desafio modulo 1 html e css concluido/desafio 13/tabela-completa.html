@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela completa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: bolder;
+            
+        }
+        caption{
+            font-size: 1.5em;
+            margin: 0px;
+            text-transform: uppercase;
+            background-color:  rgba(50, 50, 255, 0.712);
+            width: 800px;
+            border-radius: 8px 8px 0px 0px;
+            padding: 10px;
+            
+        }
+        td{
+            border: 2px solid black;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: rgba(190, 239, 255, 0.89);
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+            
+        }
+        td:hover{
+            background-color: rgb(164, 206, 219);
+            color: white;
+            
+        }
+        thead td{
+            background-color: rgba(157, 255, 157, 0.568);
+        }
+        thead td:hover{
+            background-color: lightgreen;
+        }
+        th{
+            border: 2px solid black;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: rgba(1, 148, 197, 0.658);
+        th:hover{
+            background-color: rgb(164, 206, 219);
+            color: white;
+        
+            
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">grupos</th>
+                <th scope="col">nomes</th>
+                <th scope="colgroup" colspan="3" class="filmes">filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3" class="mulheres">mulheres</th>
+                <td>ana maria dos santos </td>
+                <td>rambo</td>
+                <td>alien</td>
+                <td>vingadores</td>
+                
+            </tr>
+            <tr>
+                <td>beatrz souza</td>
+                <td>hulk</td>
+                <td>inception</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>cláudia melo</td>
+                <td>oblivion</td>
+                <td>matrix</td>
+                <td>big hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3" class="homens">homens</th>
+                <td>bruno mendoça</td>
+                <td>intocáveis</td>
+                <td>aminesia</td>
+                <td>gladiador</td>
+            </tr>
+            <tr>
+                <td>daniel lourenço</td>
+                <td>wall-e</td>
+                <td>oldboy</td>
+                <td>dangal</td>
+            </tr>
+            <tr>
+                <td>fabiano mota</td>
+                <td>star wars 5</td>
+                <td>taxi driver</td>
+                <td>toy story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

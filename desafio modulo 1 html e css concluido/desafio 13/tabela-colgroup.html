@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas colgroup</title>
+    <style>
+        h1{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px;
+          text-align: center;           
+
+        }
+        caption{
+            font-weight: bolder;
+            font-size: 30px;
+            padding: 8px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 600px;
+            height: 200px;
+            margin: auto;
+        }
+        th, td{
+            border: 3px solid black;
+        }
+        .blue{
+            background-color: rgba(0, 0, 255, 0.493);
+            color: white;
+        }
+        .yellow{
+            background-color: rgba(255, 255, 45, 0.774);
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando tabelas</h1>
+    
+    
+   
+    <table>
+        <colgroup>
+            
+            <col class="blue">
+            <col class="yellow"> 
+            <col class="blue"> 
+            <col class="yellow">
+            </colgroup>
+        <caption class="caption">Cadastros</caption>
+        <tr>
+            <th scope="col">sexo</th>
+            <th scope="col">nome</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissao</th>
+        </tr>
+        <tr>
+            <td>mulher</td>
+            <td>maria</td>
+            <td>23</td>
+            <td>medica</td>
+        </tr>
+        <tr>
+            <td>mulher</td>
+            <td>maria</td>
+            <td>23</td>
+            <td>medica</td>
+        </tr>
+        <tr>
+            <td>mulher</td>
+            <td>maria</td>
+            <td>23</td>
+            <td>medica</td>
+        </tr>
+        <tr>
+            <td>mulher</td>
+            <td>maria</td>
+            <td>23</td>
+            <td>medica</td>
+        </tr>
+        <tr>
+            <td>mulher</td>
+            <td>maria</td>
+            <td>23</td>
+            <td>medica</td>
+        </tr>
+
+    </table>
+</body>
+</html>

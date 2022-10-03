@@ -1,0 +1,52 @@
+@charset "utf-8"; 
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+iframe{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: auto;
+
+}
+thead > tr > th{
+    position: sticky; /*ao colocar  o sticky com  as  configuracoes abaixo e o position realative na table, o cabeçãlho fica fixo na tela*/  
+    top: 0px;
+   
+}
+
+caption{
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+table{
+    border-collapse: collapse;
+    position: relative;
+    display: block;
+}
+th, td{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+   
+ 
+    
+}
+td:nth-child(even){
+    background-color: skyblue;
+}
+th{
+    background-color: blue;
+    color: white;
+}
+#container{
+    overflow-x: auto;
+}
+.linha2{
+    background-color: rgb(175, 173, 173);
+    color: white;
+}

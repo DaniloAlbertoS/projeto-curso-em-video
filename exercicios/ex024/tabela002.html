@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela grandes
+    </title>
+    <style>
+        * td, tr, thead, tfoot{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 50px;
+            position: relative;
+            
+           
+        }
+        tbody tr:nth-child(2n)/*esse comando e para dar o efeito zebrado*/
+        {
+            background-color: rgb(167, 167, 167);
+        }
+        td, tfoot, thead, tr, th{
+            border: 2px solid black;
+            padding: 10px;
+           
+        
+        }
+        thead > tr >th{
+            position: sticky; /*ao colocar  o sticky com  as  configuracoes abaixo e o position realative na table, o cabeçãlho fica fixo na tela*/  
+            top: 0px;
+            background-color:  gray;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        td{
+            text-align: left;
+            font-size: 20px;
+            font-variant: small-caps;
+            
+        .num{
+            text-align: right;
+            
+            font-weight: bold;
+
+        }
+        td:hover{
+            background-color: blue;
+            color: white;
+        }
+        th{
+            padding: 20px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>anatomia para tabelas grandes</h1>
+    <table>
+        <caption>populaçao da unidades federativas </caption>
+        <thead>
+            <tr>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 10px;">populaão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>são paulo</td>
+                <td class="num">11111111</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td class="num">11111111</td>
+            </tr>
+            <tr>
+                <td>são paulo</td>
+                <td class="num">11111111</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">11111111</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">11111111</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">11111111</td>
+            </tr>
+            <tr>
+                 <td>minas gerais</td>
+                 <td class="num">11111111</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">11111111</td>
+           </tr>
+           <tr>
+            <td>minas gerais</td>
+            <td class="num">11111111</td>
+       </tr>
+       <tr>
+        <td>minas gerais</td>
+        <td class="num">11111111</td>
+   </tr>
+   <tr>
+    <td>minas gerais</td>
+    <td class="num">11111111</td>
+</tr>
+<tr>
+    <td>minas gerais</td>
+    <td class="num">11111111</td>
+</tr>
+<tr>
+    <td>minas gerais</td>
+    <td class="num">11111111</td>
+</tr>
+<tr>
+    <td>minas gerais</td>
+    <td class="num">11111111</td>
+</tr>
+<tr>
+    <td>minas gerais</td>
+    <td class="num">11111111</td>
+</tr>
+<tr>
+    <td>minas gerais</td>
+    <td class="num">11111111</td>
+</tr>
+<tr>
+    <td>minas gerais</td>
+    <td class="num">11111111</td>
+</tr>
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td class="num">00000000000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
