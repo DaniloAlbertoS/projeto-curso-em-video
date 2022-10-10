@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formularios</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadstro.php" autocomplete="on">
+        <p>
+            <label for="usu">nome</label>
+            <input type="text" name="usu" id="usu" required maxlength="30"
+            minlength="5" placeholder="nome de usuario" autocomplete="name">
+
+        </p>
+        <p>
+            <label for="media">média</label>
+            <input type="number" name="media" id="media" min="0" max="10" step="0.5" required placeholder="0 a 10">
+
+        </p>
+        <p><label for="mes">Periodo letivo</label>
+            <input type="month" name="mes" id="mes" required >
+
+        </p>
+        <p><label for="data">dia da prova</label>
+            <input type="date" name="data" id="data" required >
+        </p>
+        <p>
+            <label for="horario">horario</label>
+            <input type="time" name="hora" id="hora" required  >
+
+        </p>
+        <p>
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email" required placeholder="coloque seu  email" maxlength="50" minlength="20" autocomplete="email" >
+        </p>
+        <p>
+            <label for="tel">telefone do aluno:</label>
+            <input type="tel" name="tel" required placeholder="coloque seu telefone, sem traços ou pontos" size="32" autocomplete="tel">
+        </p>
+        <p>
+            <p>
+                <label for="senha">digite a sua senha:</label>
+                <input type="password" max="20"
+                min="10" required placeholder="coloque sua senha,  sem traços ou pontos" size="32" autocomplete="current-password" role="alert">
+            </p>
+            <input type="submit" value="enviar" >
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
