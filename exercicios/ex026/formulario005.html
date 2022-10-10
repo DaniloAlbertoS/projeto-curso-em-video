@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste formulario</title>
+</head>
+<body>
+    <h1>teste com formularios</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+    <fieldset>
+        <legend>enviando arquivos</legend>
+        <p>
+            <label for="color">escolha sua cor:</label>
+            <input type="color" name="color" id="color" value="#00f555" required>
+
+        </p>
+        <p>
+            <label for="nivel">escolha o nivel de satisfação</label>
+            <input type="range" name="nivel" id="nivel" min="1" max="50" value="50" required>
+
+        </p>
+        <p>
+            <label for="arquivos">escolha seus  arquivos:</label>
+            <input type="file" name="arquivos" id="arquivos" required>
+
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+       
+        
+    </fieldset>
+</form>
+</body>
+</html>
