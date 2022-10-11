@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>formulario com java script</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <p>
+            <label for="numb1">numero 1</label>
+            <input type="number" name="numb1" id="numb1" max="60" min="1" required oninput="soma.innerHTML =Number(numb1.value) + Number(numb2.value)">
+        </p>
+        <p>
+            <label for="numb2">numero 2</label>
+            <input type="number" name="numb2" id="numb2" min="1" max="60" required oninput="soma.innerHTML =Number(numb1.value) + Number(numb2.value)">
+
+        </p>
+        <p>
+            <label for="soma">soma:</label>
+            <output name="soma" id="soma">0</output>
+        </p>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </p>
+</form>
+<p>
+</body>
+</html>
