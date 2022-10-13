@@ -1,6 +1,73 @@
 @charset "utf-8";
 
 /* todas as outras  versões*/
-@media screen {
+/* typical devices breakpoints
+penas telas: ate 600px
+celulares: 600px ate 768px
+tablet: 768px ate 992px
+desktop: 992px ate 1200px
+grandes telas acima de 1200px
+*/
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+    main{
+        border: 3px solid black;
+        width: 90px;
+    }
+       
+    main::after{
+        content: 'esta impressao foi feita feita por  danilo';
+    }
+    main h1{
+        color: black;
+        text-shadow: none;
+
+    }
+
+    #phone, #pc, #tablet, #tv{
+        display: none;
+    }
+    #print{
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   body{ 
+    background-image: url(../imagens/back-tablet.jpg );
+    
+}
+    #tablet{
+        display: block;
+    }
+    #phone, #tv, #pc, #print{
+        display: none;
+    }
+}
+@media screen and (min-width:992px) and ( max-width:1200px) {
+    body{
+        background-image:  url(../imagens/back-pc.jpg);
+
+    }
+    #tablet, #phone{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    body{
+        background-image:  url(../imagens/back-tv.jpg);
+    }
+    #phone, #pc, #tablet{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
     
 }
