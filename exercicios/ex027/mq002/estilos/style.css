@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* modo geral de telas*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html, body{
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h1{
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
